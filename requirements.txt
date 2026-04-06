@@ -9,3 +9,9 @@ beautifulsoup4~=4.13.3
 warcio~=1.7.5
 dnspython~=2.7.0
 gunicorn~=20.1.0
+flask~=2.3.3
+flask-cors~=3.0.10
+torch
+whois
+
+

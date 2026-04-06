@@ -9,7 +9,7 @@ from flask_cors import CORS #allow communication between front-end and back-end
 import socket # resolve domain to IP address
 import pandas as pd
 from feature_extraction_for_new_URLs import getFeature # change URL to feature vector
-from lstm_v2_demo import predict_from_sample_row #chanfe features to prediction
+from lstm_v2_demo import predict_from_sample_row #change features to prediction
 from werkzeug.utils import secure_filename
 import os
 
@@ -178,5 +178,5 @@ def export_csv():
         return jsonify({'error': f'Error exporting CSV: {str(e)}'}), 500
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0" , port=5000)
 
